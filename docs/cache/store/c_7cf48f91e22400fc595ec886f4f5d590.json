@@ -1,0 +1,379 @@
+{
+    "name": "App\\User",
+    "line": 11,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App",
+    "file": "C:\\Users\\Angelica\\Documents\\LARAVEL\\stisla-laravel\/app\\User.php",
+    "relative_file": null,
+    "hash": "c4a49ff7c2a29346f3b2e8087674d202eaa2094f",
+    "parent": "Illuminate\\Foundation\\Auth\\User",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Notifiable": "Illuminate\\Notifications\\Notifiable",
+        "MustVerifyEmail": "Illuminate\\Contracts\\Auth\\MustVerifyEmail",
+        "Authenticatable": "Illuminate\\Foundation\\Auth\\User",
+        "HasRoles": "Spatie\\Permission\\Traits\\HasRoles",
+        "UserTrait": "App\\Traits\\UserTrait"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Notifications\\Notifiable": "Illuminate\\Notifications\\Notifiable",
+        "Spatie\\Permission\\Traits\\HasRoles": "Spatie\\Permission\\Traits\\HasRoles",
+        "App\\Traits\\UserTrait": "App\\Traits\\UserTrait"
+    },
+    "properties": {
+        "fillable": {
+            "name": "fillable",
+            "line": 26,
+            "short_desc": "The attributes that are mass assignable.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "name",
+                            "attributes": {
+                                "startLine": 32,
+                                "comments": [
+                                    {
+                                        "nodeType": "Comment_Doc",
+                                        "text": "\/**\r\n       * Se colocan los campos de la tabla en este caso para un usuario\r\n       * Para ocultar o rellenar un campo en un modelo, usan estas variables protegidas\r\n       * El Eloquent obedecer\u00e1 autom\u00e1ticamente estas reglas mientras usa el modelo respetado.\r\n       *\/",
+                                        "line": 27,
+                                        "filePos": 553
+                                    }
+                                ],
+                                "endLine": 32,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 32,
+                            "comments": [
+                                {
+                                    "nodeType": "Comment_Doc",
+                                    "text": "\/**\r\n       * Se colocan los campos de la tabla en este caso para un usuario\r\n       * Para ocultar o rellenar un campo en un modelo, usan estas variables protegidas\r\n       * El Eloquent obedecer\u00e1 autom\u00e1ticamente estas reglas mientras usa el modelo respetado.\r\n       *\/",
+                                    "line": 27,
+                                    "filePos": 553
+                                }
+                            ],
+                            "endLine": 32
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "email",
+                            "attributes": {
+                                "startLine": 32,
+                                "endLine": 32,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 32,
+                            "endLine": 32
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "password",
+                            "attributes": {
+                                "startLine": 32,
+                                "endLine": 32,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 32,
+                            "endLine": 32
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 26,
+                    "endLine": 34,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "appends": {
+            "name": "appends",
+            "line": 36,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "allPermissions",
+                            "attributes": {
+                                "startLine": 36,
+                                "endLine": 36,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 36,
+                            "endLine": 36
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "profilelink",
+                            "attributes": {
+                                "startLine": 36,
+                                "endLine": 36,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 36,
+                            "endLine": 36
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "avatarlink",
+                            "attributes": {
+                                "startLine": 36,
+                                "endLine": 36,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 36,
+                            "endLine": 36
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "isme",
+                            "attributes": {
+                                "startLine": 36,
+                                "endLine": 36,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 36,
+                            "endLine": 36
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 36,
+                    "endLine": 36,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "hidden": {
+            "name": "hidden",
+            "line": 45,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "password",
+                            "attributes": {
+                                "startLine": 51,
+                                "comments": [
+                                    {
+                                        "nodeType": "Comment",
+                                        "text": "\/**A veces es posible que desee limitar los atributos, como las contrase\u00f1as,\r\n      *   Para hacerlo, agregue una propiedad $ hidden a su modelo\r\n       * que se incluyen en la matriz de su modelo o la representaci\u00f3n JSON.\r\n       *\/",
+                                        "line": 46,
+                                        "filePos": 1334
+                                    }
+                                ],
+                                "endLine": 51,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 51,
+                            "comments": [
+                                {
+                                    "nodeType": "Comment",
+                                    "text": "\/**A veces es posible que desee limitar los atributos, como las contrase\u00f1as,\r\n      *   Para hacerlo, agregue una propiedad $ hidden a su modelo\r\n       * que se incluyen en la matriz de su modelo o la representaci\u00f3n JSON.\r\n       *\/",
+                                    "line": 46,
+                                    "filePos": 1334
+                                }
+                            ],
+                            "endLine": 51
+                        }
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": null,
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "remember_token",
+                            "attributes": {
+                                "startLine": 51,
+                                "endLine": 51,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 51,
+                            "endLine": 51
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 45,
+                    "endLine": 53,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        },
+        "casts": {
+            "name": "casts",
+            "line": 60,
+            "short_desc": "The attributes that should be cast to native types.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "key": {
+                            "nodeType": "Scalar_String",
+                            "value": "email_verified_at",
+                            "attributes": {
+                                "startLine": 66,
+                                "comments": [
+                                    {
+                                        "nodeType": "Comment_Doc",
+                                        "text": "\/**\r\n       * Puede personalizar el formato de serializaci\u00f3n de los atributos\r\n       *  de fecha Eloquent individuales especificando el\r\n       *  formato de fecha en la declaraci\u00f3n de conversi\u00f3n\r\n       *\/",
+                                        "line": 61,
+                                        "filePos": 1761
+                                    }
+                                ],
+                                "endLine": 66,
+                                "kind": 1
+                            }
+                        },
+                        "value": {
+                            "nodeType": "Scalar_String",
+                            "value": "datetime",
+                            "attributes": {
+                                "startLine": 66,
+                                "endLine": 66,
+                                "kind": 1
+                            }
+                        },
+                        "byRef": false,
+                        "attributes": {
+                            "startLine": 66,
+                            "comments": [
+                                {
+                                    "nodeType": "Comment_Doc",
+                                    "text": "\/**\r\n       * Puede personalizar el formato de serializaci\u00f3n de los atributos\r\n       *  de fecha Eloquent individuales especificando el\r\n       *  formato de fecha en la declaraci\u00f3n de conversi\u00f3n\r\n       *\/",
+                                    "line": 61,
+                                    "filePos": 1761
+                                }
+                            ],
+                            "endLine": 66
+                        }
+                    }
+                ],
+                "attributes": {
+                    "startLine": 60,
+                    "endLine": 67,
+                    "kind": 2
+                }
+            },
+            "errors": []
+        }
+    },
+    "methods": {
+        "getAllpermissionsAttribute": {
+            "name": "getAllpermissionsAttribute",
+            "line": 69,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}
